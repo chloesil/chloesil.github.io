@@ -52,9 +52,9 @@
         <
       </td>
       <td></td>
-      <td align="left" width="50%"><a href="../parkey" class="link">
+      <td align="left" width="50%"><a href="../21days" class="link">
         <div class="next">previous project</div>
-        PARKEY</a>
+        21 DAYS</a>
       </td></a>
       <td align="right" width="50%"><a href="../desire" class="link">
         <div class="next">next project</div>

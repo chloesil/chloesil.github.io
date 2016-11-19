@@ -294,6 +294,11 @@ nav .title {
   background-size: 100% 100%;
 }
 
+.days {
+  background: url(../img/th/21days.png) center;
+  background-size: 100% 100%;
+}
+
 .beef {
   background: url(../img/th/beef.png) center right;
   background-size: 100% 100%;

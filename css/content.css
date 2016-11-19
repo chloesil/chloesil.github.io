@@ -125,3 +125,54 @@ a.link{
 	margin-top: 20px;
 	margin-bottom: 2px;
 }
+
+.pullquote {
+	font-size: 18px;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.pullquote:before {
+	content: '"';
+	margin-left: -5px;
+}
+
+.pullquote:after {
+	content: '"';
+}
+
+p.bold {
+	margin-top: 40px;
+}
+
+.clearfix:before {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    content: " ";
+    display: table;    
+    clear: both !important;
+}
+.pull-left {
+	float: left !important;
+	width: 68%;
+}
+.pull-right {
+	float: right !important;
+	width: 27%;
+	margin-left: 10px;
+	border: 1px solid black;
+}
+@media (max-width: 600px) {
+	.pull-left,
+	.pull-right {
+		width: 100%;
+		float: none !important;
+	}
+}
+
+.wider {
+	width: 65%
+}

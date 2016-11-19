@@ -73,9 +73,9 @@
     </div>
     <div id="contain">
         <div id="dummy"></div>
-        <div class="element parkey">
-        <a href="parkey" style="top: 1%; left: 0.5%;width:90%;height: 90%;display: inline-block;" align="center"><br><br>
-          Parkey<br>
+        <div class="element days">
+        <a href="21days" style="top: 1%; left: 0.5%;width:90%;height: 90%;display: inline-block;" align="center"><br><br>
+          21 Days<br>
         Mobile App Design
         <br><br><div class="view">VIEW PROJECT</div></a>
         </div>
