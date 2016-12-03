@@ -1,16 +1,16 @@
 $(function(){	
-    var cubuk_seviye = $(document).scrollTop();
-    var header_yuksekligi = $('.yapiskan').outerHeight();
+    var scrollToTop = $(document).scrollTop();
+    var header = $('.navigation').outerHeight();
 
     $(window).scroll(function() {
-        var kaydirma_cubugu = $(document).scrollTop();
+        var windowScroll = $(document).scrollTop();
 
-        if (kaydirma_cubugu > header_yuksekligi){$('.yapiskan').addClass('gizle');} 
-        else {$('.yapiskan').removeClass('gizle');}
+        if (windowScroll > header){$('.navigation').addClass('navigation-hide');} 
+        else {$('.navigation').removeClass('navigation-hide');}
 
-        if (kaydirma_cubugu > cubuk_seviye){$('.yapiskan').removeClass('sabit');} 
-        else {$('.yapiskan').addClass('sabit');}				
+        if (windowScroll > scrollToTop){$('.navigation').removeClass('navigation-show');} 
+        else {$('.navigation').addClass('navigation-show');}				
 
-        cubuk_seviye = $(document).scrollTop();	
+        scrollToTop = $(document).scrollTop();	
      });
 });

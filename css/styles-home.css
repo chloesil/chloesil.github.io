@@ -7,6 +7,12 @@ body {
   font-size: 16px;
 }
 
+section {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Nav
 -----------------------------------------------*/
 nav {
@@ -19,12 +25,12 @@ nav a {
 	font-size: 14px;
 	font-weight: 700;
 	color: #424945;
-  -o-transition:color .2s ease-out, background .2s ease-out;
-  -ms-transition:color .2s ease-out, background .2s ease-out;
-  -moz-transition:color .2s ease-out, background .2s ease-out;
-  -webkit-transition:color .2s ease-out, background .2s ease-out;
-  /* ...and now override with proper CSS property */
-  transition:color .2s ease-out, background .2s ease-out;
+  -o-transition: color .2s ease-out, background .2s ease-out;
+  -ms-transition: color .2s ease-out, background .2s ease-out;
+  -moz-transition: color .2s ease-out, background .2s ease-out;
+  -webkit-transition: color .2s ease-out, background .2s ease-out;
+  // ...and now override with proper CSS property
+  transition: color .2s ease-out, background .2s ease-out;
 }
 
 .space {
@@ -54,7 +60,7 @@ nav .title {
   font-family: 'nexa_lightregular', sans-serif;
 }
 
-.yapiskan{
+.navigation {
   background-color: rgba(255,255,255,0.9);
   padding: 5px; 
   text-align: center; 
@@ -66,11 +72,11 @@ nav .title {
   z-index: 100;
 }
 
-.gizle {
+.navigation-hide {
   top: -90px;
 }
-.sabit {
-  top:0;
+.navigation-show {
+  top: 0;
 	z-index: 9999;
 }
 
@@ -121,7 +127,7 @@ nav .title {
   color:#1995DB;
 }
 
-.blue .view:hover {  
+.blue .work-btn:hover {  
   background:#1995DB; 
   border-color: #1995DB;
 }
@@ -156,7 +162,7 @@ nav .title {
   color:#CE7A0B;
 }
 
-.red .view:hover {  
+.red .work-btn:hover {  
   background:#CE7A0B; 
   border-color:#CE7A0B;
 }
@@ -190,7 +196,7 @@ nav .title {
 .green .contact a {
   color:#45936E;
 }
-.green .view:hover {  
+.green .work-btn:hover {  
   background:#45936E;
   border-color:#45936E;
 }
@@ -198,9 +204,6 @@ nav .title {
 /* Carousel
 -----------------------------------------------*/
 .carousel {
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: 8%;
 }
 
@@ -224,28 +227,32 @@ nav .title {
 /* Work
 -----------------------------------------------*/
 
-.work{
-  width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#contain {
+.work-container {
   display: inline-block;
   position: relative;
   width: 24.7%;
   margin: 0px;
 }
 
-#dummy {
+.work-container-inner {
   margin-top: 100%;
 }
+
 .element {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.element-inner {
+  display: inline-block;
+  top: 1%;
+  left: 0.5%;
+  width: 90%;
+  height: 90%;
+  text-align: center;
 }
 
 .work a {
@@ -266,10 +273,9 @@ nav .title {
   text-decoration: none;
 }
 
-.view { 
+.work-btn { 
   padding: 10px 20px 10px 20px;
   width: 70px;
-  background: rgba(69,147,110,0.0);
   font-family: 'nexa_boldregular';
   border-style: solid;
   border-radius: 5px;
@@ -365,18 +371,18 @@ nav .title {
   font-weight: 700;
 }
 
-.table {
+.table-desktop {
   padding: 20px 0% 0px 0%;}
 
-.table .wide {
+.table-desktop .wide {
   padding-right: 20px;
 }
 
-.tablesmall #contact {
+.table-mobile #contact {
   padding-top: 40px;
 }
 
-.face, .face2 {
+.face {
   width: 100%;
 }
 
@@ -397,12 +403,12 @@ footer p {
 @media only screen and (min-width: 1030px) {
   /* monitors */
 
-  .navismall {
-  	display:none;
+  .nav-mobile {
+  	display: none;
   }
 
-  .tablesmall {
-    display:none;
+  .table-mobile {
+    display: none;
   }
 
   .work a:hover { 
@@ -410,7 +416,7 @@ footer p {
     color: rgba(255,255,255,1.0);
   }
 
-  .view:hover { 
+  .work-btn:hover { 
     padding: 10px 20px 10px 20px;
     width: 70px;
     border-radius: 5px;
@@ -430,7 +436,7 @@ footer p {
 @media only screen and (min-width: 768px) and (max-width: 1029px) {
   /* monitors */
 
-  .navismall {
+  .nav-mobile {
   	display: none;
   }
 
@@ -438,15 +444,15 @@ footer p {
   	display: none;
   }
 
-  #contain {
+  .work-container {
     width: 33%;
   }
 
-  .table {
+  .table-desktop {
     padding: 20px 0% 0px 0%;
   }
 
-  .tablesmall {
+  .table-mobile {
     display: none;
   }
 
@@ -455,7 +461,7 @@ footer p {
     color: rgba(255,255,255,1.0);
   }
 
-  .view:hover { 
+  .work-btn:hover { 
     padding: 10px 20px 10px 20px;
     width: 70px;
     border-radius: 5px;
@@ -463,43 +469,38 @@ footer p {
     margin-left: auto;
     margin-top: 10px;
   }
-
-  .smaller {
-    width: 50%;
-    margin: 0 auto;
-  }
 }
 
 
 
 @media only screen and (max-width: 767px) {
 
-  .navi {
+  .nav-desktop {
     display: none;
   }
 
-  .navismall {
-    display:initial;
+  .nav-mobile {
+    display: initial;
   }
 
-  #contain {
+  .work-container {
     width: 49.55%;
   }
 
-  .table {
-    display:none;
+  .table-desktop {
+    display: none;
   }
 
-  .tablesmall {
-    display:inline;
+  .table-mobile {
+    display: inline;
   }
 
   .slick-prev {
-    left:-10px;
+    left: -10px;
   }
 
   .slick-next {
-    right:-10px;
+    right: -10px;
   }
 
   .carousel {
@@ -510,23 +511,23 @@ footer p {
 
 @media only screen and (max-device-width: 767px) {
 
-  .navi {
+  .nav-desktop {
     display: none;
   }
 
-  .navismall {
+  .nav-mobile {
     display: initial;
   }
 
-  #contain {
+  .work-container {
     width: 49.25%;
   }
 
-  .table {
+  .table-desktop {
     display: none;
   }
 
-  .tablesmall {
+  .table-mobile {
     display: inline;
   }
 
