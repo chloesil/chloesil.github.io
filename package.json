@@ -1,0 +1,10 @@
+{
+  "name": "not-sirotkinco",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": "git://github.com/sashasirotkin/sirotkinco",
+  "description": "Static site generator for Sasha Sirotkin's personal site",
+  "dependencies": {
+    "express": "4.14.0"
+  }
+}

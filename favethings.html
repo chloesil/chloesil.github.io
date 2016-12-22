@@ -39,65 +39,118 @@
 
   </head>
 
+
   <body>
     
     <script type='text/javascript'>
-      // Smooth Scrolling (Anchors)
-      $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
+  // Smooth Scrolling (Anchors)
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+  // Colour Randomizer
+  jQuery(function($) {
+    $(document).ready(function() {
+      var colors = ["red", "green", "blue"],
+        css = colors[Math.floor(Math.random() * colors.length)];
+      $("body").addClass(css);
+    });
+  });
+</script>
+<script type="text/javascript">
+  // google analytics stuff, separate from other scripts
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66538906-1', 'auto');
+  ga('send', 'pagework-btn');
+  ga(‘set’, ‘&uid’, {{USER_ID}}); // Set the user ID using signed-in user_id.
+</script>
+
+<!-- navigation begins -->
+<nav>
+  <div class="navigation">
+
+    <!-- Desktop nav begins -->
+    <div class="nav-desktop">
+      <table border="0" align="center" width="90%">
+        <tr>
+          <td align="left" width="80px">
+            <a href="index">
+              <span class="monobg">
+                <img src="img/mono.png" class="mono">
+              </span>
+            </a>
+          </td>
+          <td align="left" width="145px">
+            <span class="name">CHLOE SILVER</span>
+          </td>
+          <td align="left" width="150px">
+          <script language="javascript" type="text/javascript">
+            // <![CDATA[
+            // <![CDATA[
+            function random_imglink(){
+            var myimages=new Array()
+            //specify random images below. You can have as many as you wish
+            myimages[1]="is quick with a camera"
+            myimages[2]="is susceptible to flattery"
+            myimages[3]="loves potato chips"
+            myimages[4]="thinks she's punny"
+            myimages[5]="is sans serif"
+            myimages[6]="is obsessed with pixels"
+            myimages[7]="is mobile-friendly"
+
+            var ry=Math.floor(Math.random()*myimages.length)
+            if (ry==0)
+            ry=1
+            document.write('<span class="title">'+myimages[ry]+'</span>')
             }
-          }
-        });
-      });
-
-      // Colour Randomizer
-      jQuery(function($) {
-        $(document).ready(function() {
-          var colors = ["red", "green", "blue"],
-            css = colors[Math.floor(Math.random() * colors.length)];
-          $("body").addClass(css);
-        });
-      });
-    </script>
-    <script type="text/javascript">
-      // google analytics stuff, separate from other scripts
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-66538906-1', 'auto');
-      ga('send', 'pagework-btn');
-      ga(‘set’, ‘&uid’, {{USER_ID}}); // Set the user ID using signed-in user_id.
-    </script>
-
-    <!-- navigation begins -->
-    <nav>
-      <div class="navigation">
-
-        <!-- Desktop nav begins -->
-        <div class="nav-desktop">
-          <table border="0" align="center" width="90%">
-            <tr>
-              <td align="left" width="80px">
-                <a href="index">
-                  <span class="monobg">
-                    <img src="img/mono.png" class="mono">
-                  </span>
-                </a>
-              </td>
-              <td align="left" width="145px">
-                <span class="name">CHLOE SILVER</span>
-              </td>
-              <td align="left" width="150px">
+            random_imglink()
+            // ]]]]><![CDATA[>
+            // ]]>
+          </script>
+          </td>
+          <td align="right" class="right">
+            <a href="#work">WORK</a>
+            <a href="#about" class="space">ABOUT</a>
+            <a href="#contact" class="space">CONTACT</a>
+            <a href="http://www.blog.chloesilver.ca" class="space">BLOG</a>
+            <a href="http://instagram.com/chloesil" target="blank" class="insta-space"><img src="img/icons-01.png" class="icons"></a>
+            <a href="https://ca.linkedin.com/in/chloesilver" target="blank" class="icon-space"><img src="img/icons-04.png" class="icons"></a>
+            <a href="https://vimeo.com/chloesil" target="blank" class="icon-space"><img src="img/icons-03.png" class="icons"></a>
+            <a href="https://soundcloud.com/chloe-silver/" target="blank" class="icon-space"><img src="img/icons-02.png" class="icons"></a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- Desktop nav ends -->
+    <!-- Mobile nav begins -->
+    <div class="nav-mobile">
+      <table border="0" align="center" width="90%">
+        <tr>
+          <td align="left" width="80px">
+            <a href="index">
+              <span class="monobg">
+                <img src="img/mono.png" class="mono">
+              </span>
+            </a>
+          </td>
+          <td align="left">
+            <span class="name">CHLOE SILVER</span><br>
+            <span class="title">
               <script language="javascript" type="text/javascript">
                 // <![CDATA[
                 // <![CDATA[
@@ -121,67 +174,15 @@
                 // ]]]]><![CDATA[>
                 // ]]>
               </script>
-              </td>
-              <td align="right" class="right">
-                <a href="#work">WORK</a>
-                <a href="#about" class="space">ABOUT</a>
-                <a href="#contact" class="space">CONTACT</a>
-                <a href="http://www.blog.chloesilver.ca" class="space">BLOG</a>
-                <a href="http://instagram.com/chloesil" target="blank" class="insta-space"><img src="img/icons-01.png" class="icons"></a>
-                <a href="https://ca.linkedin.com/in/chloesilver" target="blank" class="icon-space"><img src="img/icons-04.png" class="icons"></a>
-                <a href="https://vimeo.com/chloesil" target="blank" class="icon-space"><img src="img/icons-03.png" class="icons"></a>
-                <a href="https://soundcloud.com/chloe-silver/" target="blank" class="icon-space"><img src="img/icons-02.png" class="icons"></a>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <!-- Desktop nav ends -->
-        <!-- Mobile nav begins -->
-        <div class="nav-mobile">
-          <table border="0" align="center" width="90%">
-            <tr>
-              <td align="left" width="80px">
-                <a href="index">
-                  <span class="monobg">
-                    <img src="img/mono.png" class="mono">
-                  </span>
-                </a>
-              </td>
-              <td align="left">
-                <span class="name">CHLOE SILVER</span><br>
-                <span class="title">
-                  <script language="javascript" type="text/javascript">
-                    // <![CDATA[
-                    // <![CDATA[
-                    function random_imglink(){
-                    var myimages=new Array()
-                    //specify random images below. You can have as many as you wish
-                    myimages[1]="is quick with a camera"
-                    myimages[2]="is susceptible to flattery"
-                    myimages[3]="loves potato chips"
-                    myimages[4]="thinks she's punny"
-                    myimages[5]="is sans serif"
-                    myimages[6]="is obsessed with pixels"
-                    myimages[7]="is mobile-friendly"
-
-                    var ry=Math.floor(Math.random()*myimages.length)
-                    if (ry==0)
-                    ry=1
-                    document.write('<span class="title">'+myimages[ry]+'</span>')
-                    }
-                    random_imglink()
-                    // ]]]]><![CDATA[>
-                    // ]]>
-                  </script>
-                </span>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <!-- Mobile nav ends -->
-      </div>
-    </nav>
-    <!-- navigation ends -->
+            </span>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- Mobile nav ends -->
+  </div>
+</nav>
+<!-- navigation ends -->
 
     <section class="work-content">
 
@@ -250,160 +251,158 @@
 
     </section>
 
-
-    <!-- Footer begins -->
     <section class="about contact" id="about">
-      <!-- Desktop footer begins  -->
-      <table border="0" align="center" class="table-desktop">
-        <tr>
-          <td class="title">Yours Truly</td>
-          <td class="title">About Me</td>
-          <td class="title" id="contact">Say Hello!</td>
-        </tr>
-        <tr valign="top">
-          <td class="wide"><br>
-            <img src="img/chloe.jpg" class="face">
-          </td>
-          <td class="wide"><br>I am a graphic designer of web and print, amateur photographer, and hands-on craftstress. I  enjoy tackling new challenges and discussing design, music and the occasional knock-knock joke.<br><br>If you'd like to collaborate or just share a good joke, feel free to drop me a line.</td>
-          <td><br>
-            <form name="contactform" method="post" action="send_form_email.php">
-              <table width="340px">
-              <tr>
-               <td colspan="2">
-                Kindly send your tidings to <a href="mailto:hello@chloesilver.ca" target="_top">hello@chloesilver.ca</a> or fill out the handy form below.
-               </td>
-              </tr>
-              <tr>
-               <td valign="top">
-                <label for="first_name">First Name</label>
-               </td>
-               <td valign="top">
-                <input  type="text" name="first_name" maxlength="50" size="30">
-               </td>
-              </tr>
-              <tr>
-               <td valign="top">
-                <label for="last_name">Last Name</label>
-               </td>
-               <td valign="top">
-                <input  type="text" name="last_name" maxlength="50" size="30">
-               </td>
-              </tr>
-              <tr>
-               <td valign="top">
-                <label for="email">Email Address</label>
-               </td>
-               <td valign="top">
-                <input  type="text" name="email" maxlength="80" size="30">
-               </td>
-              </tr>
-              <tr>
-               <td valign="top">
-                <label for="telephone">Telephone Number</label>
-               </td>
-               <td valign="top">
-                <input  type="text" name="telephone" maxlength="30" size="30">
-               </td>
-              </tr>
-              <tr>
-               <td valign="top">
-                <label for="comments">Comments</label>
-               </td>
-               <td valign="top">
-                <textarea  name="comments" maxlength="1000" cols="31" rows="6"></textarea>
-               </td>
-              </tr>
-              <tr>
-               <td colspan="2" style="text-align:center">
-                <input type="submit" value="Submit">
-               </td>
-              </tr>
-              </table>
-            </form>
-          </td>
-        </tr>
-      </table>
-      <!-- Desktop footer ends -->
-      <!-- Mobile footer begins -->
-      <table border="0" align="center" class="table-mobile">
-        <tr valign="top">
-          <td class="title">About Me</td>
-        </tr>
-        <tr>
-          <td><br>
-            <img src="img/chloe.jpg" class="face"><br>I am a graphic designer of web and print, amateur photographer, and hands-on craftstress. I  enjoy tackling new challenges and discussing design, music and the occasional knock-knock joke.<br><br>If you'd like to collaborate or just share a good joke, feel free to drop me a line.
-          </td>
-        </tr>
-        <tr>
-          <td class="title" id="contact">Say Hello!</td>
-        </tr>
-        <tr>
-          <td><br>
-            <form name="contactform" method="post" action="send_form_email.php">
-              <table>
-              <tr>
-               <td colspan="2">
-                Kindly send your tidings to <a href="mailto:hello@chloesilver.ca" target="_top">hello@chloesilver.ca</a> or fill out the handy form below.
-               </td>
-               
-              </tr>
-              
-              <tr>
-               <td valign="top">
-                <label for="first_name">First Name</label>
-               </td>
-               <td valign="top">
-                <input  type="text" name="first_name" maxlength="50" size="25">
-               </td>
-              </tr>
-              <tr>
-               <td valign="top">
-                <label for="last_name">Last Name</label>
-               </td>
-               <td valign="top">
-                <input  type="text" name="last_name" maxlength="50" size="25">
-               </td>
-              </tr>
-              <tr>
-               <td valign="top">
-                <label for="email">Email Address</label>
-               </td>
-               <td valign="top">
-                <input  type="text" name="email" maxlength="80" size="25">
-               </td>
-              </tr>
-              <tr>
-               <td valign="top">
-                <label for="telephone">Telephone Number</label>
-               </td>
-               <td valign="top">
-                <input  type="text" name="telephone" maxlength="30" size="25">
-               </td>
-              </tr>
-              <tr>
-               <td valign="top">
-                <label for="comments">Comments</label>
-               </td>
-               <td valign="top">
-                <textarea  name="comments" maxlength="1000" cols="26" rows="6"></textarea>
-               </td>
-              </tr>
-              <tr>
-               <td colspan="2" style="text-align:center">
-                <input type="submit" value="Submit">
-               </td>
-              </tr>
-              </table>
-            </form>
-          </td>
-        </tr>
-      </table>
-      <!-- Mobile footer ends -->
-    </section>
-    <footer>
-      <p>ALL RIGHTS RESERVED BY CHLOE SILVER 2012-2017</p>
-    </footer>
-    <!-- Footer ends -->
+  <!-- Desktop footer begins  -->
+  <table border="0" align="center" class="table-desktop">
+    <tr>
+      <td class="title">Yours Truly</td>
+      <td class="title">About Me</td>
+      <td class="title" id="contact">Say Hello!</td>
+    </tr>
+    <tr valign="top">
+      <td class="wide"><br>
+        <img src="img/chloe.jpg" class="face">
+      </td>
+      <td class="wide"><br>I am a graphic designer of web and print, amateur photographer, and hands-on craftstress. I  enjoy tackling new challenges and discussing design, music and the occasional knock-knock joke.<br><br>If you'd like to collaborate or just share a good joke, feel free to drop me a line.</td>
+      <td><br>
+        <form name="contactform" method="post" action="send_form_email.php">
+          <table width="340px">
+          <tr>
+           <td colspan="2">
+            Kindly send your tidings to <a href="mailto:hello@chloesilver.ca" target="_top">hello@chloesilver.ca</a> or fill out the handy form below.
+           </td>
+          </tr>
+          <tr>
+           <td valign="top">
+            <label for="first_name">First Name</label>
+           </td>
+           <td valign="top">
+            <input  type="text" name="first_name" maxlength="50" size="30">
+           </td>
+          </tr>
+          <tr>
+           <td valign="top">
+            <label for="last_name">Last Name</label>
+           </td>
+           <td valign="top">
+            <input  type="text" name="last_name" maxlength="50" size="30">
+           </td>
+          </tr>
+          <tr>
+           <td valign="top">
+            <label for="email">Email Address</label>
+           </td>
+           <td valign="top">
+            <input  type="text" name="email" maxlength="80" size="30">
+           </td>
+          </tr>
+          <tr>
+           <td valign="top">
+            <label for="telephone">Telephone Number</label>
+           </td>
+           <td valign="top">
+            <input  type="text" name="telephone" maxlength="30" size="30">
+           </td>
+          </tr>
+          <tr>
+           <td valign="top">
+            <label for="comments">Comments</label>
+           </td>
+           <td valign="top">
+            <textarea  name="comments" maxlength="1000" cols="31" rows="6"></textarea>
+           </td>
+          </tr>
+          <tr>
+           <td colspan="2" style="text-align:center">
+            <input type="submit" value="Submit">
+           </td>
+          </tr>
+          </table>
+        </form>
+      </td>
+    </tr>
+  </table>
+  <!-- Desktop footer ends -->
+  <!-- Mobile footer begins -->
+  <table border="0" align="center" class="table-mobile">
+    <tr valign="top">
+      <td class="title">About Me</td>
+    </tr>
+    <tr>
+      <td><br>
+        <img src="img/chloe.jpg" class="face"><br>I am a graphic designer of web and print, amateur photographer, and hands-on craftstress. I  enjoy tackling new challenges and discussing design, music and the occasional knock-knock joke.<br><br>If you'd like to collaborate or just share a good joke, feel free to drop me a line.
+      </td>
+    </tr>
+    <tr>
+      <td class="title" id="contact">Say Hello!</td>
+    </tr>
+    <tr>
+      <td><br>
+        <form name="contactform" method="post" action="send_form_email.php">
+          <table>
+          <tr>
+           <td colspan="2">
+            Kindly send your tidings to <a href="mailto:hello@chloesilver.ca" target="_top">hello@chloesilver.ca</a> or fill out the handy form below.
+           </td>
+           
+          </tr>
+          
+          <tr>
+           <td valign="top">
+            <label for="first_name">First Name</label>
+           </td>
+           <td valign="top">
+            <input  type="text" name="first_name" maxlength="50" size="25">
+           </td>
+          </tr>
+          <tr>
+           <td valign="top">
+            <label for="last_name">Last Name</label>
+           </td>
+           <td valign="top">
+            <input  type="text" name="last_name" maxlength="50" size="25">
+           </td>
+          </tr>
+          <tr>
+           <td valign="top">
+            <label for="email">Email Address</label>
+           </td>
+           <td valign="top">
+            <input  type="text" name="email" maxlength="80" size="25">
+           </td>
+          </tr>
+          <tr>
+           <td valign="top">
+            <label for="telephone">Telephone Number</label>
+           </td>
+           <td valign="top">
+            <input  type="text" name="telephone" maxlength="30" size="25">
+           </td>
+          </tr>
+          <tr>
+           <td valign="top">
+            <label for="comments">Comments</label>
+           </td>
+           <td valign="top">
+            <textarea  name="comments" maxlength="1000" cols="26" rows="6"></textarea>
+           </td>
+          </tr>
+          <tr>
+           <td colspan="2" style="text-align:center">
+            <input type="submit" value="Submit">
+           </td>
+          </tr>
+          </table>
+        </form>
+      </td>
+    </tr>
+  </table>
+  <!-- Mobile footer ends -->
+</section>
+<footer>
+  <p>ALL RIGHTS RESERVED BY CHLOE SILVER 2012-2017</p>
+</footer>
+<!-- Footer ends -->
 
   </body>
 
