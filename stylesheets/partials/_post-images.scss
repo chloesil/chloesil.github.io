@@ -1,0 +1,35 @@
+/* Images
+-----------------------------------------------*/
+
+.post-content {
+  .img-container {
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+  }
+
+  img {
+    width: 70%;
+    float: left;
+  }
+
+  .img-caption-title {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    color: $brand-2;
+  }
+
+  .img-caption {
+    width: 25%;
+    float: right;
+    padding: 15px 0 0 3px;
+    border-top: 1px solid $brand-2;
+    font-size: 0.8em;
+  }
+}

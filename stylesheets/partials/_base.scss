@@ -1,0 +1,15 @@
+/* Overall CSS
+-----------------------------------------------*/
+
+.blog-nav,
+.blog-home,
+.blog-post {
+  color: #333;
+  font-size: 18px;
+  font-family: $fontStack;
+  margin-top: 8%;
+}
+
+.blog-post {
+  margin-top: 0;
+}

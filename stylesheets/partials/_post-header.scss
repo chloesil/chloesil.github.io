@@ -1,0 +1,50 @@
+/* Post Header Image
+-----------------------------------------------*/
+
+.post-header {
+  // background style is contained in the _post-home.ejs component
+  width: 100%;
+  background-size: cover;
+  padding: 50px 0;
+  
+  .post-title {
+    background-color: $transparent;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    padding: 30px 15px 15px;
+
+    .title {
+      font-weight: $fontWeight--bold;
+      font-size: 2em;
+      color: $black;
+      margin: 10px 0 3px;
+    }
+
+    span {
+      font-weight: $fontWeight;
+      font-family: $fontStack-serif;
+      letter-spacing: -2px;
+    }
+
+    .post-date {
+      font-family: $fontStack-serif;
+      font-size: 0.8em;
+      padding: 25px 0 10px 0;
+      margin-top: 7px;
+      position: relative;
+
+      &:before {
+        content : "";
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 45px;
+        width: 120px;
+        border-top: 1px solid $black;
+      }
+    }
+  }
+}
