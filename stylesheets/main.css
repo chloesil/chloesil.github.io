@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/*@import "fonts/open-sans";*/
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Vollkorn");
+/*@import "partials/reset";*/
+/* Overall CSS
+-----------------------------------------------*/
+.blog-nav,
+.blog-home,
+.blog-post {
+  color: #333;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 8%; }
+
+.blog-post {
+  margin-top: 0; }
+
+/* Tags
+-----------------------------------------------*/
+.tag {
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding-bottom: 10px; }
+  .tag:before {
+    border-radius: 25px;
+    padding: 8px;
+    margin-right: 5px;
+    color: #fff;
+    font-family: "FontAwesome"; }
+
+.tag-design {
+  color: #6258af; }
+  .tag-design:before {
+    background-color: #6258af;
+    content: ""; }
+
+.tag-sketchbook {
+  color: #e2be27; }
+  .tag-sketchbook:before {
+    background-color: #e2be27;
+    content: ""; }
+
+.tag-culture {
+  color: #c95b5b; }
+  .tag-culture:before {
+    background-color: #c95b5b;
+    content: ""; }
+
+.tag-update {
+  color: #5b9ba5; }
+  .tag-update:before {
+    background-color: #5b9ba5;
+    content: ""; }
+
+.tag-travel {
+  color: #63aa57; }
+  .tag-travel:before {
+    background-color: #63aa57;
+    content: ""; }
+
+/* Modifier: Post Header
+-----------------------------------------------*/
+/* Posts - Home Page
+-----------------------------------------------*/
+.home-post {
+  width: 100%;
+  height: 250px; }
+  .home-post .post-left {
+    width: 65%;
+    float: left;
+    height: 250px; }
+    .home-post .post-left .post-title {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: right;
+      float: right;
+      width: 60%;
+      padding: 15px;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      .home-post .post-left .post-title .title {
+        font-weight: bold;
+        font-size: 1.6em;
+        color: #333;
+        margin: 10px 0 3px; }
+      .home-post .post-left .post-title .post-date {
+        font-family: "Vollkorn", serif;
+        font-size: 0.8em;
+        padding: 25px 0 10px 0;
+        margin-top: 7px;
+        position: relative; }
+        .home-post .post-left .post-title .post-date:before {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 45px;
+          width: 120px;
+          border-top: 1px solid #333; }
+  .home-post .post-right {
+    width: 32%;
+    margin-left: 2%;
+    float: left;
+    background: #fff;
+    position: relative;
+    height: 250px;
+    margin-top: 19px; }
+    .home-post .post-right .post-blurb {
+      line-height: 1.5;
+      font-family: "Vollkorn", serif; }
+    .home-post .post-right .read-more {
+      font-size: 0.8em; }
+      .home-post .post-right .read-more:after {
+        font-family: "FontAwesome";
+        content: ""; }
+
+/* Post Header Image
+-----------------------------------------------*/
+.post-header {
+  width: 100%;
+  background-size: cover;
+  padding: 50px 0; }
+  .post-header .post-title {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    padding: 30px 15px 15px; }
+    .post-header .post-title .title {
+      font-weight: 600;
+      font-size: 2em;
+      color: #333;
+      margin: 10px 0 3px; }
+    .post-header .post-title span {
+      font-weight: 400;
+      font-family: "Vollkorn", serif;
+      letter-spacing: -2px; }
+    .post-header .post-title .post-date {
+      font-family: "Vollkorn", serif;
+      font-size: 0.8em;
+      padding: 25px 0 10px 0;
+      margin-top: 7px;
+      position: relative; }
+      .post-header .post-title .post-date:before {
+        content: "";
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 45px;
+        width: 120px;
+        border-top: 1px solid #333; }
+
+/* Post Content
+-----------------------------------------------*/
+.post-content {
+  width: 63%;
+  font-family: "Vollkorn", serif;
+  margin: 0 auto;
+  margin-top: 2em;
+  font-size: 20px; }
+  .post-content p {
+    line-height: 1.5; }
+  .post-content h2, .post-content h3, .post-content .img-caption-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600; }
+  .post-content h3 {
+    color: #606060; }
+  .post-content .dropcap {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.95em; }
+  .post-content .red .dropcap {
+    color: #b64c7c; }
+  .post-content .blue .dropcap {
+    color: #6182b2; }
+  .post-content .green .dropcap {
+    color: #fdc731; }
+  .post-content a {
+    color: #333;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #6182b2; }
+    .post-content a:hover {
+      color: #6182b2;
+      cursor: pointer; }
+  .post-content .pullquote {
+    margin: 50px 0;
+    padding-left: 30px;
+    border-left: 5px solid #6182b2;
+    /*font-size: 1.3em;*/
+    font-family: "Montserrat", sans-serif;
+    color: #606060; }
+
+/* Code your site for min-width: 0px first */
+/* Now add mobile-first CSS */
+/* Images
+-----------------------------------------------*/
+.post-content .img-container:before, .post-content .img-container:after {
+  content: " ";
+  display: table; }
+
+.post-content .img-container:after {
+  clear: both; }
+
+.post-content img {
+  width: 70%;
+  float: left; }
+
+.post-content .img-caption-title {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  color: #6182b2; }
+
+.post-content .img-caption {
+  width: 25%;
+  float: right;
+  padding: 15px 0 0 3px;
+  border-top: 1px solid #6182b2;
+  font-size: 0.8em; }

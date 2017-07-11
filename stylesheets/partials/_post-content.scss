@@ -1,0 +1,84 @@
+/* Post Content
+-----------------------------------------------*/
+
+.post-content {
+    width: 63%;
+    font-family: $fontStack-serif;
+    margin: 0 auto;
+    margin-top: $spacing-xl;
+    font-size: 20px;
+
+  p {
+    line-height: $lineHeight;
+  }
+
+  h2, h3, .img-caption-title {
+    font-family: $fontStack;
+    font-weight: $fontWeight--bold;
+  }
+
+  h3 {
+    color: $grey;
+  }
+
+  .dropcap {
+    font-family: $fontStack;
+    font-weight: $fontWeight--bold;
+    text-transform: uppercase;
+    font-size: 0.95em;
+  }
+
+  .red .dropcap {
+    color: $brand-1;
+  }
+
+  .blue .dropcap {
+    color: $brand-2;
+  }
+
+  .green .dropcap {
+    color: $brand-3;
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid $brand-2;
+
+    &:hover {
+      color: $brand-2;
+      cursor: pointer;
+    }
+  }
+
+  .pullquote {
+    margin: 50px 0;
+    padding-left: 30px;
+    border-left: 5px solid $brand-2;
+    /*font-size: 1.3em;*/
+    font-family: $fontStack;
+    color: $grey;
+  }
+}
+
+/* Code your site for min-width: 0px first */
+
+/* Now add mobile-first CSS */
+@media (min-width: 320px) {
+  
+} @media (min-width: 540px) {
+  
+} @media (min-width: 768px) {
+  
+} @media (min-width: 868px) {
+  
+} @media (min-width: 992px) {
+  
+} @media (min-width: 1120px) {
+  
+} @media (min-width: 1440px) {
+  
+} @media (min-width: 1600px) {
+  
+}

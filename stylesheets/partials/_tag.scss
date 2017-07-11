@@ -1,0 +1,73 @@
+/* Tags
+-----------------------------------------------*/
+
+.tag {
+  position: relative;
+  font-weight: $fontWeight--bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding-bottom: 10px;
+
+  &:before {
+    border-radius: 25px;
+    padding: 8px;
+    margin-right: 5px;
+    color: $white;
+    font-family: $fontStack-icons;
+  }
+}
+
+.tag-design {
+  color: $tag-design;
+
+  &:before {
+    background-color: $tag-design;
+    content: $icon--design;
+  }
+}
+
+.tag-sketchbook {
+  color: $tag-sketchbook;
+
+  &:before {
+    background-color: $tag-sketchbook;
+    content: $icon--sketchbook;
+  }
+}
+
+.tag-culture {
+  color: $tag-culture;
+
+  &:before {
+    background-color: $tag-culture;
+    content: $icon--culture;
+  }
+}
+
+.tag-update {
+  color: $tag-update;
+
+  &:before {
+    background-color: $tag-update;
+    content: $icon--update;
+  }
+}
+
+.tag-travel {
+  color: $tag-travel;
+
+  &:before {
+    background-color: $tag-travel;
+    content: $icon--travel;
+  }
+}
+
+
+
+/* Modifier: Post Header
+-----------------------------------------------*/
+
+.post-header {
+  .tag {
+  }
+}

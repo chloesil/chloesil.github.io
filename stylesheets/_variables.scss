@@ -1,0 +1,241 @@
+// Settings: Variables
+// ----------------------------------
+// Use variables for values that span multiple component files.
+
+// Variable Naming Convention
+// $property-component--modifier
+
+
+
+// Table of Contents
+// ----------------------------------
+
+// 1.0  - Colors
+//   1.1  - Base Colors - USED ONLY IN THIS FILE
+//   1.2  - Action Colors
+//   1.3  - State Colors
+//   1.4  - Text Colors
+//   1.5  - Container Colors
+//   1.6  - Border Colors
+//   1.7  - Drop Shadow Colors
+//   1.8  - Admin Colors
+// 2.0  - Fonts
+//   2.1 Font Families
+//   2.2 Font Sizes
+//   2.3 Line Heights
+//   2.4 Font Weights
+// 3.0  - Border Radius
+// 4.0  - Grid
+//   4.1  - Padding and Spacing
+// 5.0  - Z-Index
+// 6.0  - Animations
+// 7.0  - Icons
+
+
+
+// 1.0 Colors
+// ----------------------------------
+
+// 1.1 Base Colors
+// ----------------------------------
+// These should only be used in this file.
+
+// Greys
+$white:             #fff;
+$grey:              #606060;
+$black:             #333;
+
+// White with transparency
+$transparent:       rgba($white, 0.8);
+
+$brand-1: 			#b64c7c;
+$brand-2: 			#6182b2;
+$brand-3: 			#fdc731;
+
+// Colors
+$purple: 			#6258af;
+$yellow: 			#e2be27;
+$red: 				#c95b5b;
+$blue: 				#5b9ba5;
+$green: 			#63aa57;
+
+
+// 1.2 Action Colors (Buttons and Links)
+// ----------------------------------
+
+$tag-design:               $purple;
+$tag-culture:		       $red;
+$tag-sketchbook:	       $yellow;
+$tag-update:		       $blue;
+$tag-travel:		       $green;
+
+
+
+// 2.0 Fonts
+// ----------------------------------
+
+// 2.1 Font Families
+// ----------------------------------
+
+$fontStack:                        "Montserrat", sans-serif;
+$fontStack-serif:                  "Vollkorn", serif;
+$fontStack-icons:                  "FontAwesome";
+
+
+
+// 2.2 Font Sizes
+// ----------------------------------
+
+$fontSize--large:                  4rem;    // 56px Not used for headings
+$fontSize--h1:                     2.8rem;  // 39px
+$fontSize--h2:                     2rem;    // 28px
+$fontSize--h3:                     1.5rem;  // 22px
+$fontSize--h4:                     1.2rem;  // 17px
+$fontSize:                         14px;    // Base font size
+$fontSize--h5:                     0.9rem;  // 13px
+$fontSize--h6:                     0.85rem; // 12px
+$fontSize--small:                  0.8rem;  // 11px
+
+
+
+// 2.3 Line Heights
+// ----------------------------------
+
+$lineHeight:                       1.5;
+
+
+
+// 2.4 Font Weights
+// ----------------------------------
+
+$fontWeight:                       400;
+$fontWeight--light:                300;
+$fontWeight--bold:                 600;
+$fontWeight--heavy:                800;
+
+
+
+// 3.0 Border Radius
+// ----------------------------------
+
+$borderRadius:                     3px;
+$borderRadius--medium:             5px;
+
+
+
+// 4.0 Grid
+// ----------------------------------
+
+$gutter:                           15px;
+$total-columns:                    12;
+$breakpoints: (
+  small:  640px,
+  medium: 768px,
+  large:  1024px
+);
+
+
+
+// 4.1 Paddings and Spacing
+// ----------------------------------
+
+$height-topbar:                    48px;
+$width-navigation:                 230px;
+$padding-section:                  58px;
+$padding-box:                      40px;
+
+$spacing-xs:                       0.2em;
+$spacing-s:                        0.5em;
+$spacing-m:                        1em;
+$spacing-l:                        1.5em;
+$spacing-xl:                       2em;
+
+
+
+// 5.0 Z-Index
+// ----------------------------------
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+$zIndex-skip-link:                 700;
+$zIndex-notice:                    600;
+$zIndex-badges:                    500;
+$zIndex-dropdown:                  400;
+$zIndex-modal:                     310;
+$zIndex-modal-overlay:             300;
+$zIndex-panel:                     210;
+$zIndex-panel-overlay:             200;
+$zIndex-navigation-topbar:         150;
+$zIndex-navigation:                100;
+$zIndex-animations:                 10;
+$zIndex:                             1;
+
+
+
+// 6.0 Animations
+// ----------------------------------
+
+$animation-speed:                  0.35s;
+$animation-speed--fast:            0.2s;
+$animation-easing:                 cubic-bezier(0.66, 0, 0.33, 1);
+
+
+
+// 7.0 Icons
+// ----------------------------------
+
+// Tags
+$icon--design: 		"\f1fc"; // fa-paint-brush
+$icon--travel: 		"\f0f2"; // fa-suitcase
+$icon--culture: 	"\f18c"; // fa-leaf
+$icon--sketchbook: 	"\f040"; // fa-pencil
+$icon--update: 		"\f0a1"; // fa-bullhorn
+
+// Chevrons
+$icon--chevron-up:                 "\f077"; // fa-chevron-up
+$icon--chevron-down:               "\f078"; // fa-chevron-down
+$icon--chevron-right:              "\f054"; // fa-chevron-right
+$icon--chevron-circle-right:       "\f138"; // fa-chevron-circle-right
+
+// Carets
+$icon--caret-up:                   "\f0d8"; // fa-caret-up
+$icon--caret-down:                 "\f0d7"; // fa-caret-down
+$icon--caret-right:                "\f0da"; // fa-caret-right
+
+// Angles
+$icon--angle-right:                "\f105"; // fa-angle-right
+
+// Arrows
+$icon--arrow-up:                   "\f062"; // fa-arrow-up
+$icon--arrow-down:                 "\f063"; // fa-arrow-down
+$icon--arrow-left:                 "\f060"; // fa-arrow-left
+$icon--arrow-right:                "\f061"; // fa-arrow-right
+
+// Sorting
+$icon--sort-asc:                   "\f0de"; // fa-sort-asc
+$icon--sort-desc:                  "\f0dd"; // fa-sort-desc
+
+// Misc
+$icon--move:                       "\f047"; // fa-arrows
+$icon--search:                     "\f002"; // fa-search
+$icon--check:                      "\f00c"; // fa-check
+$icon--x:                          "\f00d"; // fa-times
+
+// Squares
+$icon--square-empty:               "\f096"; // fa-square-o
+$icon--square-check:               "\f14a"; // fa-check-square
+
+// Circles
+$icon--circle-info:                "\f05a"; // fa-info-circle
+$icon--circle-question:            "\f059"; // fa-question-circle
+$icon--circle-exclamation:         "\f06a"; // fa-exclamation-circle
+$icon--circle-check:               "\f058"; // fa-check-circle
+$icon--circle-empty:               "\f10c"; // fa-circle-o
+$icon--circle-empty-thin:          "\f1db"; // fa-circle-thin
+
+// Managemobi
+$icon--rocket:                     "\f135"; // fa-rocket
+$icon--hourglass-half:             "\f252"; // fa-hourglass-half
+
+// Currencies
+$icon--dollar:                     "\f155"; // fa-usd (used for all $ currencies)
