@@ -81,8 +81,6 @@
       padding: 15px;
       position: relative;
       top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
       transform: translateY(-50%); }
       .home-post .post-left .post-title .title {
         font-weight: bold;
@@ -206,22 +204,20 @@
 .post-content .img-container:before, .post-content .img-container:after {
   content: " ";
   display: table; }
-
 .post-content .img-container:after {
   clear: both; }
-
 .post-content img {
   width: 70%;
   float: left; }
-
 .post-content .img-caption-title {
   text-transform: uppercase;
   padding-bottom: 15px;
   color: #6182b2; }
-
 .post-content .img-caption {
   width: 25%;
   float: right;
   padding: 15px 0 0 3px;
   border-top: 1px solid #6182b2;
   font-size: 0.8em; }
+
+/*# sourceMappingURL=main.css.map */
