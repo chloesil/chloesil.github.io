@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
   <head>
     <!-- Favicon -->
@@ -41,7 +41,12 @@
 
   <body>
 
-    <script type='text/javascript'>
+    <div class="offset">
+  <a href="#maincontent">Skip to main content</a>
+  <a href="#navigation">Skip to navigation</a>
+ </div>
+
+<script type='text/javascript'>
   // Smooth Scrolling (Anchors)
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
@@ -81,7 +86,7 @@
 
 <!-- navigation begins -->
 <nav>
-  <div class="navigation">
+  <div class="navigation" id="navigation">
 
     <!-- Desktop nav begins -->
     <div class="nav-desktop">
@@ -90,7 +95,7 @@
           <td align="left" width="80px">
             <a href="index">
               <span class="monobg">
-                <img src="img/mono.png" class="mono">
+                <img src="img/mono.png" class="mono" alt="A monogram design of the letters C and S.">
               </span>
             </a>
           </td>
@@ -133,7 +138,7 @@
           <td align="left" width="80px">
             <a href="index">
               <span class="monobg">
-                <img src="img/mono.png" class="mono">
+                <img src="img/mono.png" class="mono" alt="A monogram design of the letters C and S.">
               </span>
             </a>
           </td>
@@ -161,7 +166,7 @@
             </span>
           </td>
           <td align="right js-nav-toggle">
-            <img src="img/icons-nav.png" class="icon js-nav-toggle">
+            <img src="img/icons-nav.png" class="icon js-nav-toggle" alt="Navigation Menu">
           </td>
         </tr>
       </table>
@@ -178,107 +183,105 @@
 
 
 
-    <div class="me piece">
-      <img src="img/faces.gif" class="phone faces">
+    <div class="me piece" id="maincontent">
+      <img src="img/faces.gif" class="phone faces" alt="A gif with 4 frames, each of them a different expression of Chloe's illustrated face. The four expressions are neutral, happy, confused, and nervous.">
       <div class="piece-description">
-        <div class="project-title">Howdy, <br>I'm Chloe.
-        </div>
+        <h1 class="project-title">Howdy, <br>I'm Chloe.</h1>
         <div class="blurb">
           I like to think of my projects as answers to questions. Scroll down to see some of my work, or send me an email if you want to chat.
         </div>
-        <a href="mailto:hello@chloesilver.ca"><button class="btn">EMAIL ME</button></a>
-        <center><img src="img/faces.gif" class="phone-mobile faces"></center>
+        <a href="mailto:hello@chloesilver.ca" class="btn">EMAIL ME</a>
+        <center><img src="img/faces.gif" class="phone-mobile faces" alt="A gif with 4 frames, each of them a different expression of Chloe's illustrated face. The four expressions are neutral, happy, confused, and nervous."></center>
       </div>
     </div>
 
     <!-- Work Tiles begin -->
 
     <div class="checkin piece" id="work">
-      <img src="img/checkin/phone.png" class="phone">
+      <img src="img/checkin/phone.png" class="phone" alt="An iPhone whose screen shows the attendee list of Chloe's Check In app.">
       <div class="piece-description">
-        <div class="project-title">
-        <img src="img/checkin/logo.png" class="logo"><br>Check In
-        </div>
+        <h2 class="project-title">
+        <img src="img/checkin/logo.png" class="logo" alt="The logo for Chloe's Check In app: the words 'check' and 'in' with an arrow pointing forward."><br>Check In
+        </h2>
         <div class="blurb">
           Q: How can we help planners keep track of their attendees during events?
         </div>
-        <a href="checkin"><button class="btn">VIEW PROJECT</button></a>
-        <center><img src="img/checkin/phone.png" class="phone-mobile"></center>
+        <a href="checkin" class="btn">VIEW CHECK IN</a>
+        <center><img src="img/checkin/phone.png" class="phone-mobile" alt="An iPhone whose screen shows the attendee list of Chloe's Check In app."></center>
       </div>
     </div>
 
     <div class="friendcanoe piece">
-      <img src="img/friendcanoe/phone.png" class="phone">
+      <img src="img/friendcanoe/phone.png" class="phone" alt="An iPhone whose screen shows the friend list of Chloe's FriendCanoe app.">
       <div class="piece-description">
-        <div class="project-title">
-        <img src="img/friendcanoe/logo.png" class="logo"><br>FriendCanoe
-        </div>
+        <h2 class="project-title">
+        <img src="img/friendcanoe/logo.png" class="logo" alt="The logo for Chloe's FriendCanoe project - a yellow circle with a small cute orange boat in the middle of it. The circle is meant to be the sun."><br>FriendCanoe
+        </h2>
         <div class="blurb">
           Q: How can we strengthen friendships between people with busy lives?
         </div>
-        <a href="friendcanoe"><button class="btn">VIEW PROJECT</button></a>
-        <center><img src="img/friendcanoe/phone.png" class="phone-mobile"></center>
+        <a href="friendcanoe" class="btn">VIEW FRIENDCANOE</a>
+        <center><img src="img/friendcanoe/phone.png" class="phone-mobile" alt="An iPhone whose screen shows the friend list of Chloe's FriendCanoe app."></center>
       </div>
     </div>
 
     <div class="inuit piece">
-      <img src="img/inuitart/phone.png" class="phone">
+      <img src="img/inuitart/phone.png" class="phone" alt="">
       <div class="piece-description">
-        <div class="project-title">
-          <img src="img/inuitart/logo.png" class="logo"><br>Cultural Latitudes
-        </div>
+        <h2 class="project-title">
+          <img src="img/inuitart/logo.png" class="logo" alt="The logo for Chloe's FriendCanoe project - a yellow circle with a small cute orange boat in the middle of it. The circle is meant to be the sun."><br>Cultural Latitudes
+        </h2>
         <div class="blurb">
           Q: How can we use augmented reality to raise awareness of the importance of Inuit arts and culture?
         </div>
-        <a href="inuitart"><button class="btn">VIEW PROJECT</button></a>
+        <a href="inuitart" class="btn">VIEW CULTURAL NETWORKS</a>
       </div>
     </div>
 
     <div class="days21 piece">
-      <img src="img/21days/phone.png" class="phone">
+      <img src="img/21days/phone.png" class="phone" alt="An iPhone whose screen shows the habit finder of Chloe's 21 Days app.">
       <div class="piece-description">
-        <div class="project-title">
+        <h2 class="project-title">
           21 Days
-        </div>
+        </h2>
         <div class="blurb">
           Q: How can we build good habits that will stand the test of time?
         </div>
-        <a href="21days"><button class="btn">VIEW PROJECT</button></a>
-        <center><img src="img/21days/phone.png" class="phone-mobile"></center>
+        <a href="21days" class="btn">VIEW 21 DAYS</a>
+        <center><img src="img/21days/phone.png" class="phone-mobile" alt="An iPhone whose screen shows the habit finder of Chloe's 21 Days app."></center>
       </div>
     </div>
 
     <div class="fgsp piece">
-      <img src="img/inuitart/phone.png" class="phone">
+      <img src="img/inuitart/phone.png" class="phone" alt="">
       <div class="piece-description">
-        <div class="project-title">
-        <img src="img/fgs/logo.png" class="logo"><br>
+        <h2 class="project-title">
+        <img src="img/fgs/logo.png" class="logo" alt="The logo for Chloe's 50 Years of Graduate Studies project - a large numberset five-zero."><br>
           50 Years of Graduate Studies
-        </div>
+        </h2>
         <div class="blurb">
           Q: How can we commemorate the joy of fifty years of achievement?
         </div>
-        <a href="fgs"><button class="btn">VIEW PROJECT</button></a>
+        <a href="fgs" class="btn">VIEW FGS PROJECT</a>
       </div>
     </div>
 
     <div class="archive piece">
-      <img src="img/inuitart/phone.png" class="phone">
+      <img src="img/inuitart/phone.png" class="phone" alt="">
       <div class="piece-description">
-        <div class="project-title">
-          Archive
-        </div>
+        <h2 class="project-title">
+          Archive</h2>
         <div class="blurb">
           Past Work 2013 – Present
         </div>
-        <a href="archive"><button class="btn">VIEW ARCHIVE</button></a>
+        <a href="archive" class="btn">VIEW ARCHIVE</a>
       </div>
     </div>
 
     <section class="contact" id="about">
   <div class="clearfix">
     <div class="pic">
-      <img src="img/chloe.jpg" class="face">
+      <img src="img/chloe.jpg" class="face"  alt="Chloe's face">
     </div>
     <div class="bio">
       <h2 class="title">Designer, drummer, maker, shower singer</h2>
@@ -296,42 +299,42 @@
       <ul>
         <li> 
           <a href="https://twitter.com/chloesil" target="blank">
-            <img src="img/icons-twitter.png" class="icon">Twitter
+            <img src="img/icons-twitter.png" class="icon" alt="">Twitter
           </a>
         </li>
         <li> 
           <a href="https://medium.com/@chloesil" target="blank">
-            <img src="img/icons-medium.png" class="icon">Medium
+            <img src="img/icons-medium.png" class="icon" alt="">Medium
           </a>
         </li>
         <li> 
           <a href="https://dribbble.com/chloesil" target="blank">
-            <img src="img/icons-dribbble.png" class="icon">Dribbble
+            <img src="img/icons-dribbble.png" class="icon" alt="">Dribbble
           </a>
         </li>
         <li>
           <a href="http://instagram.com/chloesil" target="blank">
-            <img src="img/icons-insta.png" class="icon">Instagram
+            <img src="img/icons-insta.png" class="icon" alt="">Instagram
           </a>
         </li>
         <li>
           <a href="https://ca.linkedin.com/in/chloesilver" target="blank">
-            <img src="img/icons-04.png" class="icon">Linkedin
+            <img src="img/icons-04.png" class="icon" alt="">Linkedin
           </a>
         </li>
         <li>
           <a href="https://vimeo.com/chloesil" target="blank">
-            <img src="img/icons-03.png" class="icon">Vimeo
+            <img src="img/icons-03.png" class="icon" alt="">Vimeo
           </a>
         </li>
         <li> 
           <a href="https://soundcloud.com/chloe-silver/" target="blank">
-            <img src="img/icons-02.png" class="icon">SoundCloud
+            <img src="img/icons-02.png" class="icon" alt="">SoundCloud
           </a>
         </li>
         <li> 
           <a href="https://open.spotify.com/user/chloesil" target="blank">
-            <img src="img/icons-spotify.png" class="icon">Spotify
+            <img src="img/icons-spotify.png" class="icon" alt="">Spotify
           </a>
         </li>
       </ul>
