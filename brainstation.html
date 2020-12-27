@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+  <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <!-- Favicon -->
+    <link href="http://thoughtsvisualized.blogspot.ca/favicon.ico" rel="icon" type="image/x-icon">
+
+    <!-- Metadata Stuff -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Chloe Silver Design</title>
+    <meta name="author" content="Chloe Silver" />
+    <meta name="description" content="Chloe Silver's Design Portfolio" />
+    <meta name="keywords"  content="design,portfolio,creative,freelance,toronto,animate,code,illustration,installation,craft,print,web" />
+    <meta name="Resource-type" content="Document" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0">
+
+    <!-- CSS -->
+    <!-- Main page CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles-home.css" />
+    <!-- Project page CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles-work.css" />
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,600,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700" rel="stylesheet">
+    <!-- Carousel -->
+    <link rel="stylesheet" type="text/css" href="carousel/carousel.css"/>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Carousel -->
+    <script type="text/javascript" src="carousel/carousel.min.js"></script>
+    <!-- Carousel - mods -->
+    <script type="text/javascript" src="carousel/carousel-edited.js"></script>
+    <!-- Hiding Nav -->
+    <script type="text/javascript" src="js/head.js"></script>
+
+  </head>
+
+
+  <body>
+    
+    <div class="offset">
+  <a href="#maincontent">Skip to main content</a>
+  <a href="#navigation">Skip to navigation</a>
+ </div>
+
+<script type='text/javascript'>
+  // Smooth Scrolling (Anchors)
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+  // Colour Randomizer
+  jQuery(function($) {
+    $(document).ready(function() {
+      var colors = ["red", "green", "blue"],
+        css = colors[Math.floor(Math.random() * colors.length)];
+      $("body").addClass(css);
+    });
+  });
+</script>
+<script type="text/javascript">
+  // google analytics stuff, separate from other scripts
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66538906-1', 'auto');
+  ga('send', 'pageview');
+  ga(‘set’, ‘&uid’, {{USER_ID}}); // Set the user ID using signed-in user_id.
+</script>
+
+<!-- navigation begins -->
+<nav>
+  <div class="navigation" id="navigation">
+
+    <!-- Desktop nav begins -->
+    <div class="nav-desktop">
+      <table border="0" align="center" width="90%">
+        <tr>
+          <td align="left" width="80px">
+            <a href="index">
+              <span class="monobg">
+                <img src="img/mono.png" class="mono" alt="A monogram design of the letters C and S.">
+              </span>
+            </a>
+          </td>
+          <td align="left" width="145px">
+            <span class="name">CHLOE SILVER</span>
+          </td>
+          <td align="left" width="185px">
+          <script language="javascript" type="text/javascript">
+            function random_imglink(){
+            var myimages=new Array()
+            myimages[1]="is quick with a camera"
+            myimages[2]="is susceptible to flattery"
+            myimages[3]="loves potato chips"
+            myimages[4]="thinks she's punny"
+            myimages[5]="is sans serif"
+            myimages[6]="is obsessed with pixels"
+            myimages[7]="is mobile-friendly"
+
+            var ry=Math.floor(Math.random()*myimages.length)
+            if (ry==0)
+            ry=1
+            document.write('<span class="title">'+myimages[ry]+'</span>')
+            }
+            random_imglink()
+          </script>
+          </td>
+          <td align="right" class="right">
+            <a href="#work" class="nav-item">WORK</a>
+            <a href="#about" class="nav-item space">ABOUT</a>
+            <a href="http://blog.chloesilver.ca" class="nav-item space">BLOG</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- Desktop nav ends -->
+    <!-- Mobile nav begins -->
+    <div class="nav-mobile">
+      <table border="0" align="center" width="90%">
+        <tr>
+          <td align="left" width="80px">
+            <a href="index">
+              <span class="monobg">
+                <img src="img/mono.png" class="mono" alt="A monogram design of the letters C and S.">
+              </span>
+            </a>
+          </td>
+          <td align="left">
+            <span class="name">CHLOE SILVER</span><br>
+            <span class="title">
+              <script language="javascript" type="text/javascript">
+                function random_imglink(){
+                var myimages=new Array()
+                myimages[1]="is quick with a camera"
+                myimages[2]="is susceptible to flattery"
+                myimages[3]="loves potato chips"
+                myimages[4]="thinks she's punny"
+                myimages[5]="is sans serif"
+                myimages[6]="is obsessed with pixels"
+                myimages[7]="is mobile-friendly"
+
+                var ry=Math.floor(Math.random()*myimages.length)
+                if (ry==0)
+                ry=1
+                document.write('<span class="title">'+myimages[ry]+'</span>')
+                }
+                random_imglink()
+              </script>
+            </span>
+          </td>
+          <td align="right js-nav-toggle">
+            <img src="img/icons-nav.png" class="icon js-nav-toggle" alt="Navigation Menu">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="js-nav" style="display: none; margin-top: 10px;">
+      <a href="http://chloesilver.ca#work" class="nav-item">WORK</a><br>
+      <a href="#about" class="nav-item">ABOUT</a><br>
+      <a href="http://blog.chloesilver.ca" class="nav-item">BLOG</a>
+    </div>
+    <!-- Mobile nav ends -->
+  </div>
+</nav>
+<!-- navigation ends -->
+
+    <section class="work-content" id="top"><br>
+
+      <img src="img/brainStation/banner.png" class="splash-image">
+
+      <div class="infopage">
+            
+        <div class="content" id="content">
+          <p>
+
+          <div class="question bold"><span class="capital">Q: </span>How can we utilize transferable skills into UX/UI design in ten short evenings?</div><br>
+
+          <div class="question bold"><span class="capital">A: </span>BrainStation’s Design Program</div><div class="description bold">a part-time instructor position</div>I am a Lead Instructor in BrainStation's User Experience and User Interface Design programs. Through these 10-week part-time programs, I guide students through the fundamentals of user experience, design thinking, creative problem solving, visual design and prototyping their own mobile app. </p>
+          <p>I work actively on the course curriculum throughout each semester; keeping it up-to-date with the changing industry. Eight semesters and counting!</p>
+          <p><span class="bold">The goal of the course is often for students to gain the skills (and confidence) to transition from another field into a full-time design position. Sometimes the field is similar such as engineering or product management, but often students come into design from seemingly unrelated fields. I do my best to show them that the skills they have from these professions often help to create a unique and insightful worldview that they can use to their advantage in the design process. </span></p>
+
+          <p class="bold large" id="problem">Classroom Experience</p>
+          <img src="img/brainStation/class-shot2.jpeg" class="imgs">  
+          <p>I ensure to provide a thorough instruction on topics and give real-life examples. Students tend to be curious about the day-to-day experience of being a designer, so I try to bring examples from my own work to illustrate what it might be like for them in their next design role.</p>
+          <p>I also ensure the classroom is a safe space by giving everyone a chance to share and discuss topics amongst themselves. I believe they can learn as much from each other as they can from me, and I see great outcomes in students who choose to work in groups when given the option.</p>
+
+          <p class="bold large" id="logo">Remote Learning</p>
+          <img src="img/brainStation/grid.png" class="imgs">  
+          <p>The pandemic hit in week 8 of my Spring UI design course. Those students were especially impressive as they made the graceful switch from in-class learning to remote, presenting their final projects over zoom.</p>
+          <p>From then on, I knew that the online learning experience would play out differently and I needed to adjust my teaching style to accommodate. I introduced more breaks in the content, knowing that the average attention span drops significantly between in-person and online experiences. I found the best way to create these breaks was to create a safe zoom space and give students permission to ask questions, discuss with each other, and take an active role in their own education. In some cases, this weekly class is a sort of respite for the students from the crazy world we live in, so I take my role very seriously in ensuring the space is fun, inclusive, and a joyful place to be. </p>
+
+
+          <p class="bold large" id="logo">Student Spotlight</p>
+          <img src="img/brainStation/amanda.jpeg" class="imgs imgs-halfsize">  
+          <p>Amanda (second from left) was a student of mine who went on to win a hackathon at BrainStation with a weekend of quick research, design and rapid prototyping. I was amazed to see her use the skills I taught her to such a high degree of success so quickly.</p><br><br>
+
+          <img src="img/brainStation/tanya.jpeg" class="imgs imgs-halfsize">  
+          <p>Tanya took my UI Design class while working in the Konrad Group/BrainStation head office as a strategy and technology consultant. Her praise of my teaching style was a high compliment considering she has taken four other BrainStation courses.</p>
+          
+
+        </div>
+        <br>
+
+        <center><a href="https://brainstation.io/course/online/user-experience-design" target="blank" class="more bold">BRAINSTATION DESIGN</a></center>
+
+      </div><br><br><br>
+
+      <hr>
+      <table border="0" align="center" width="100%"><tr>
+        <td colspan="2">
+          <
+        </td>
+        <td></td>
+        <td align="left" width="50%"><a href="../fgs">
+          <div class="next"><span class="prevnext">previous</span><br>50 Years of FGS</div>
+          </a>
+        </td></a>
+        <td align="right" width="50%"><a href="../checkin">
+          <div class="next"><span class="prevnext">next</span><br>Check In</div>
+          </a>
+        </td><td></td>
+        <td colspan="2">
+          >
+        </td>
+      </tr></table>
+      <hr>
+
+    </section>
+
+    <section class="contact" id="about">
+  <div class="clearfix">
+    <div class="pic">
+      <img src="img/chloe.jpg" class="face"  alt="Chloe's face">
+    </div>
+    <div class="bio">
+      <h2 class="title">Designer, drummer, maker, shower singer</h2>
+
+      <p>Chloe is currently working as a product designer in Toronto. In her spare time she enjoys designing data visualizations, interactive Arduino experiences, and <a href="http://blog.chloesilver.ca">writing on her blog</a>.</p>
+
+      <p>Pre-pandemic (and hopefully post-pandemic), you could find Chloe at <a href="mailto:hello@chloesilver.ca">hello@chloesilver.ca</a>, drumming in her <a href="http://tdotbatu.ca/">Brazilian batu drumming band</a>, at a number of local music concerts, or biking to her latest <a href="http://bunz.com/profile/chloesil">Bunz trade</a>.</p>
+
+      <footer>
+        <p>This website and all content therein is intellectual property belonging to Chloe Silver 2012-2021.</p>
+      </footer>
+    </div>
+    <div class="one-third social">
+      <h2 class="title">Social</h2>
+      <ul>
+        <li> 
+          <a href="https://twitter.com/chloesil" target="blank">
+            <img src="img/icons-twitter.png" class="icon" alt="">Twitter
+          </a>
+        </li>
+        <li> 
+          <a href="https://medium.com/@chloesil" target="blank">
+            <img src="img/icons-medium.png" class="icon" alt="">Medium
+          </a>
+        </li>
+        <li> 
+          <a href="https://dribbble.com/chloesil" target="blank">
+            <img src="img/icons-dribbble.png" class="icon" alt="">Dribbble
+          </a>
+        </li>
+        <li>
+          <a href="http://instagram.com/chloesil" target="blank">
+            <img src="img/icons-insta.png" class="icon" alt="">Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://ca.linkedin.com/in/chloesilver" target="blank">
+            <img src="img/icons-04.png" class="icon" alt="">Linkedin
+          </a>
+        </li>
+        <li>
+          <a href="https://vimeo.com/chloesil" target="blank">
+            <img src="img/icons-03.png" class="icon" alt="">Vimeo
+          </a>
+        </li>
+        <li> 
+          <a href="https://soundcloud.com/chloe-silver/" target="blank">
+            <img src="img/icons-02.png" class="icon" alt="">SoundCloud
+          </a>
+        </li>
+        <li> 
+          <a href="https://open.spotify.com/user/chloesil" target="blank">
+            <img src="img/icons-spotify.png" class="icon" alt="">Spotify
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- Footer ends -->
+    
+  </body>
+</html>
