@@ -1,36 +1,28 @@
 ::-moz-selection {
-  background: #E5613D;
+  background: #b4da55;
   text-shadow: none; }
 
 ::selection {
-  background: #E5613D;
+  background: #b4da55;
   text-shadow: none; }
 
 html {
   width: 100%;
   height: 100%;
   font-size: 16px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   overflow: hidden; }
 
 body {
   width: 100%;
   height: 100%;
-  background-color: #F4E6BB;
-  color: #2F3441;
-  overflow: hidden; 
-}
+  overflow: hidden; }
 
 a {
-  color: #415668;
-  text-decoration: none; }
-a:hover{
-  color: #E5613D;
-  text-decoration: none; 
-background-color: #415668;
-padding:10px;
-border-radius: 16px;}
+  color: #b4da55;
+  text-decoration: none;
+  border-bottom: #b4da55 1px dotted; }
 
 h1, h2, h3 {
   font-weight: 300;
@@ -48,41 +40,20 @@ h3 {
 
 hr {
   border: none;
-  border-top: #E5613D 1px solid; }
+  border-top: #b4da55 1px solid; }
 
 .highlight {
-  color: #E5613D; }
+  color: #b4da55; }
 
 .center {
   text-align: center; }
-
-.wordmark {
-  width:250px;
-  padding-top: 20px;
-}
-
-.small {
-    margin: 0px 2%;
-    text-align: justify;
-    font-size: 12px;
-    color: #DBB856;
-    text-decoration: none;
-}
-
-.legal {
-    margin: 10px 2%;
-    text-align: justify;
-    font-size: 12px;
-    color: #415668;
-    text-decoration: none;
-}
 
 button {
   height: 32px;
   color: #F4E6BB;
   width: 92%;
   margin: 16px 4%;
-  background: #E5613D;
+  background: #b4da55;
   border: none;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -107,8 +78,8 @@ input {
   border-radius: 4px;
   background: #eeeeee; }
   input:focus {
-    -webkit-box-shadow: 0px 0px 0px 2px #E5613D inset;
-    box-shadow: 0px 0px 0px 2px #E5613D inset; }
+    -webkit-box-shadow: 0px 0px 0px 2px #b4da55 inset;
+    box-shadow: 0px 0px 0px 2px #b4da55 inset; }
 
 .timeicon, .placeicon, .moneyicon {
   width: 24px;
@@ -147,15 +118,15 @@ input {
   top: 0px;
   left: 0px;
   z-index: 3;
-  background: #E5613D; }
+  background: #b4da55; }
   .landing a {
-    color: #2F3441;
-    border-bottom: solid #2F3441 dotted; }
+    color: #333333;
+    border-bottom: solid #333333 dotted; }
   .landing img {
     width: 100% !important;
     height: auto;
     display: block;
-    background: #2F3441; }
+    background: #333333; }
   .landing .info {
     width: 100%;
     background: #F4E6BB;
@@ -182,7 +153,7 @@ input {
   .formarea form {
     width: 92%;
     padding: 16px 4%;
-    background: #2F3441; }
+    background: #333333; }
     .formarea form p {
       color: #F4E6BB; }
   .formarea p {
@@ -194,7 +165,7 @@ input {
   .formarea .loading {
     width: 0px;
     height: 8px;
-    background: #E5613D;
+    background: #b4da55;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -210,9 +181,9 @@ input {
     display: none; }
   .formarea .error {
     display: none;
-    color: #E5613D; }
+    color: #b4da55; }
   .formarea .payment {
-    border: 2px solid #E5613D;
+    border: 2px solid #b4da55;
     border-radius: 16px;
     margin: 4px auto;
     color: #F4E6BB;
@@ -221,17 +192,17 @@ input {
     width: 80%;
     overflow: hidden; }
     .formarea .payment span {
-      width: 33.23441%;
+      width: 33.333333%;
       display: block;
       float: left;
       cursor: pointer; }
       .formarea .payment span.selected {
-        background: #E5613D; }
+        background: #b4da55; }
       .formarea .payment span:first-of-type {
-        border-right: 2px solid #E5613D;
+        border-right: 2px solid #b4da55;
         margin-right: -2px; }
       .formarea .payment span:last-of-type {
-        border-left: 2px solid #E5613D;
+        border-left: 2px solid #b4da55;
         margin-left: -2px; }
 
 .ticket {
@@ -273,11 +244,11 @@ input {
       width: 100% !important;
       height: auto;
       display: block;
-      background: #2F3441; }
+      background: #333333; }
     .ticket .header .colorstrip {
       width: 100%;
       height: 32px;
-      background: #E5613D; }
+      background: #b4da55; }
       .ticket .header .colorstrip p {
         text-align: right;
         line-height: 32px;
@@ -287,13 +258,13 @@ input {
   .ticket span.ticketfname, .ticket span.ticketlname {
     font-size: 16px;
     line-height: 24px;
-    color: #2F3441; }
+    color: #333333; }
   .ticket h1 {
     line-height: 44px; }
   .ticket h2 {
     line-height: 1.5; }
   .ticket .legal {
-    margin: 10px 2%;
+    margin: 0px 2%;
     text-align: justify;
     font-size: 12px;
-    color: #DBB856; }
+    color: #CCCCCC; }
